@@ -1,0 +1,29 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POP UP</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <button type="submit" class="btn" onclick="openPopup()">SUBMIT</button>
+        <div class="PopUp" id="PopUp">
+            <img src="tick.png">
+            <h2>Thank You!</h2>
+            <p>Your Details has been Submitted Successfully.Thanks!</p>
+            <button type="button"  onclick="closePopup()">OK</button>
+        </div>
+    </div>
+    <script>
+        let PopUp=document.getElementById("PopUp");
+        function openPopup(){
+            PopUp.classList.add("open-PopUp");
+        }
+        function closePopup(){
+            PopUp.classList.remove("open-PopUp");
+        }
+    </script>
+    </body>
+</html>
